@@ -1,4 +1,5 @@
 radio.onReceivedNumber(function (receivedNumber) {
+    let mi_jugada = 0
     if (receivedNumber == 1) {
         if (mi_jugada == 1) {
             basic.showString("Empate")
@@ -38,16 +39,15 @@ radio.onReceivedNumber(function (receivedNumber) {
     }
 })
 input.onButtonPressed(Button.A, function () {
-    mi_jugada = randint(1, 1)
     basic.showIcon(IconNames.SmallSquare)
+    radio.sendNumber(1)
 })
 input.onButtonPressed(Button.AB, function () {
-    mi_jugada = randint(3, 3)
     basic.showIcon(IconNames.Scissors)
+    radio.sendNumber(3)
 })
 input.onButtonPressed(Button.B, function () {
-    mi_jugada = randint(2, 2)
     basic.showIcon(IconNames.Square)
+    radio.sendNumber(2)
 })
-let mi_jugada = 0
 radio.setGroup(107)
