@@ -3,13 +3,13 @@ radio.onReceivedNumber(function (receivedNumber) {
         if (mi_jugada == 1) {
             basic.showString("Empate")
         }
-    } else if (receivedNumber == 2) {
+    } else if (receivedNumber == 1) {
         if (mi_jugada == 2) {
-            basic.showString("Perdedor")
+            basic.showString("Ganador")
         }
     } else if (receivedNumber == 1) {
         if (mi_jugada == 3) {
-            basic.showString("Ganador")
+            basic.showString("Perdedor")
         }
     } else if (receivedNumber == 2) {
         if (mi_jugada == 1) {
@@ -24,11 +24,11 @@ radio.onReceivedNumber(function (receivedNumber) {
             basic.showString("Gandor")
         }
     } else if (receivedNumber == 3) {
-        if (mi_jugada == 3) {
+        if (mi_jugada == 1) {
             basic.showString("Perdedor")
         }
     } else if (receivedNumber == 3) {
-        if (mi_jugada == 3) {
+        if (mi_jugada == 2) {
             basic.showString("Gandor")
         }
     } else if (receivedNumber == 3) {
